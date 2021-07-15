@@ -48,3 +48,20 @@ $ git branch -d <branch> # delete local
 $ git push origin --delete <branch> # delete eremote
 ```
 
+
+
+# reset (delete commit hisoty)
+```sh 
+# delete previous commit
+$ git reset HEAD^
+
+# return to n-previous commit
+$ git reset HEAD~<n>
+
+# delete commit as workspace state remain
+$ git reset HEAD^ --soft
+
+# reset remote commit history too
+$ git reset HEAD~<n> --soft
+$ git push --force
+```
